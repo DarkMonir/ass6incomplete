@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Document</title>
+   
+  </head>
+  <body class="bg-white">
+
+    <!-- NavBar start-->
+
+    <div class="navbar bg-white main-sections container mx-auto pt-10" >
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a><i class="fa-thin fa-user-plus"></i></a></li>
+              <li>
+                <a>Parent</a>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </li>
+              <li><a>Item 3</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-4xl text-[#12132D] font-Mulish font-black">MeTro</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="#" ><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-pen"></i></a></li>
+            <li><a href="#"><i class="fa-regular fa-flag"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-user-plus"></i></a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn ">Button</a>
+        </div>
+      </div>
+
+    <!-- NavBar end -->
+
+    <!-- Banner Start -->
+
+    <section class="card main-sections container mx-auto my-6 bg-[url(images/bgbanner.png)] bg-[#12132D]  bg-no-repeat bg-center bg-cover  h-[850px] rounded-3xl text-center   flex flex-col justify-center">
+        <div class="flex gap-6 p-20 items-center ">  
+            <div class="lg:flex">  
+          <div class="flex flex-col gap-2 text-white">
+            <h2 class="font-raleway font-extrabold text-6xl ">
+                Welcome to the <br>
+              <span class="text-[#797DFC]">MeTro</span> Forum
+            </h2>
+            <p>
+                Share your favorite opinion and win and wp forum coffee mug!
+            </p>
+          
+              <label class="input items-center w-full flex justify-center px-10">
+                <input id="search-input" type="text" class="grow bg-white w-full join-item rounded-full" placeholder="Search here anything">
+
+                <button id="search-button" onclick="sortByCatagory()" class="btn join-item w-36 rounded-full   bg-[#7D7DFC] text-white ">
+                  Apply
+                </button>
+              </label>
+            </div>
+            </div>
+        
+
+            <div class="flex gap-14  bg-slate-400 font-medium font-main text-2xl rounded-lg p-7 mt-7 w-1/4 justify-end text-white">
+            <div>
+              <h3>Registered Users</h3>
+              <h3>Forum</h3>
+              <h3>Topics</h3>
+              <h3>Replies</h3>
+            </div>
+            <div>
+              <h3>01</h3>
+              <h3>05</h3>
+              <h3>01</h3>
+              <h3>01</h3>
+              <h3>01</h3>
+            </div>
+          </div>
+        </div>
+
+
+
+      </section>
+
+
+
+
+    <!-- Banner End -->
+
+
+    <!-- Lets discuss start -->
+
+    <section class="bg-white main-sections container mx-auto h-96 pt-5 mt-10">
+        <div class="text-center">
+            <h2 class="text-[#12132D] text-3xl font-Mulish font-black"> Lets discuss start </h2>
+            <p class="font-Inter text-lg font-normal">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
+        </div>
+        <div class="flex flex-col lg:flex-row mt-16 justify-between gap-8">
+          <!-- post-card start -->
+          <div id="post-card" class="flex flex-col gap-4"></div>
+          <!-- post-card end -->
+          <div id="mark-read-container" class="bg-[#12132D0D] rounded-2xl lg:w-[40%] p-6 h-fit">
+              <div class="flex justify-between">
+                  <p class="text-main font-bold text-xl">Title</p>
+                  <div class="flex gap-2">
+                      <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <desc>Created with Pixso.</desc>
+            <defs>
+              <clipPath id="clip30_2429">
+                <rect
+                  id="Frame"
+                  width="24.000000"
+                  height="24.000000"
+                  fill="white"
+                  fill-opacity="0"
+                />
+              </clipPath>
+            </defs>
+            <rect
+              id="Frame"
+              width="24.000000"
+              height="24.000000"
+              fill="#FFFFFF"
+              fill-opacity="0"
+            />
+            <g clip-path="url(#clip30_2429)">
+              <path
+                id="Vector"
+                d="M7 12L12 17L22 7"
+                stroke="#3DCE09"
+                stroke-opacity="1.000000"
+                stroke-width="1.500000"
+                stroke-linejoin="round"
+                stroke-linecap="round"
+              />
+              <path
+                id="Vector"
+                d="M2 12L7 17M12 12L17 7"
+                stroke="#3DCE09"
+                stroke-opacity="1.000000"
+                stroke-width="1.500000"
+                stroke-linejoin="round"
+              />
+            </g>
+          </svg>
+
+                      <h4>Mark as read ( <span id="read-count">0</span> )</h4>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+
+
+
+    <!-- Lets discuss end -->
+
+
+    <!-- join forum start -->
+
+    <div
+      class="card card-side bg-[#12132D] shadow-xl  main-sections container mx-auto lg:pl-10 lg:pt-20 text-[#FFF] sm:pl-0 sm:pt-0 ">
+      <div class="card-body justify-between"">
+        <h2 class="card-title text-3xl font-Mulish font-black ">New movie is released!</h2>
+        <p>Share your favorite opinion and win and wp forum coffee mug! Yes, you can <br> run unit tests and view the results directly within the app.</p>
+        <div class="card-actions pb-6 text-[#fff]">
+          <button class="btn btn-primary ">Registered Now</button>
+        </div>
+      </div>
+      <figure class="sm:w-auto"><img src="images/joinforum.png" alt="Movie" /></figure>
+      
+    </div>
+
+    <!-- join forum end -->
+
+    <!-- latest post start -->
+
+    <!-- <section class="bg-white main-sections container mx-auto  pt-5">
+      <div class="flex flex-col gap-6">
+        <div class="text-center">
+            <h2 class="text-[#12132D] text-3xl font-Mulish font-black">Latest Posts</h2>
+            <p class="font-Inter text-lg font-normal">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
+        </div>
+
+
+        <div
+            id="latest-card-container"
+            class="grid lg:pl-16 grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-2 items-center"
+          ></div>
+
+      </div>
+    </section> -->
+
+    <!-- latest post end -->
+
+    <!-- footer start -->
+    <footer
+      class="main-sections container mx-auto bg-gray-400 text-center w-auto"
+    >
+      <div class="footer-content">
+        <h2 class="text-5xl font-black font-Mulish text-[#131318] pt-5">
+          MeTro
+        </h2>
+        <p
+          class="text-[#12132db3] text-center font-normal font-Mulish text-lg mt-6"
+        >
+          "Your gateway to unforgettable journeys. Explore, discover, and create
+          memories with us. <br />
+          Tailored travel experiences crafted for you. Start your adventure
+          now!"
+        </p>
+        <ul class="flex items-center justify-center my-12">
+          <li class="sm:mx-1 lg:mx-3 my-10">
+            <a href="#" class="text-[#131318]"
+              ><i class="fa-brands fa-facebook text-xl"></i
+            ></a>
+          </li>
+          <li class="sm:mx-2 lg:mx-3 my-10">
+            <a href="#" class="text-[#131318]"
+              ><i class="fa-brands fa-twitter text-xl"></i
+            ></a>
+          </li>
+
+          <li class="lg:mx-3 my-10">
+            <a href="#" class="text-[#131318]"
+              ><i class="fa-brands fa-github text-xl"></i
+            ></a>
+          </li>
+          <li class="sm:mx-2 lg:mx-3 my-10">
+            <a href="#" class="text-[#131318]"
+              ><i class="fa-brands fa-instagram text-xl"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="text-xl font-light font-Mulish text-[#131318] pb-6">
+        <p>&copy;2017, All Rights Reserved.</p>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+
+    <script src="script/ass6.js"></script>
+  </body>
+</html>
